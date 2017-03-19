@@ -75,6 +75,15 @@
           </plugin>
         </plugins>
       </build>
+<project.scm.id>gitserver</project.scm.id>
+	</properties>
+	<scm>
+			<url>https://github.com/sreekanth1990/myweb</url>
+			<connection>scm:git:https://github.com/sreekanth1990/myweb.git</connection>
+			<developerConnection>scm:git:https://github.com/sreekanth1990/myweb.git</developerConnection>
+	  
+    <tag>HEAD</tag>
+  </scm>
 <dependencies>
         <dependency>
           <groupId>org.sonarsource.java</groupId>
