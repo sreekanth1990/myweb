@@ -55,20 +55,20 @@
 		<destfile>${basedir}/target/coverage-reports/jacoco-unit.exec</destfile>
 		<datafile>${basedir}/target/coverage-reports/jacoco-unit.exec</datafile>
 		</configuration>
-		<execuions>
-		<execuion>
+		<executions>
+		<execution>
 		<id>jacoco-initialize</id>
 		<goals>
 		<goal>prepare-agent</goal>
 		</goals>
-		</execuion>
-		<execuion>
+		</execution>
+		<execution>
 		<id>jacoco-site</id>
 		<phase>package</phase>
 		<goals>
 		<goal>report</goal>
-		</execuion>
-		</execuions>
+		</execution>
+		</executions>
 		</plugin>
 		</plugins>
 	</build>
