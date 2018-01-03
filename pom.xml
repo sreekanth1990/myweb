@@ -47,10 +47,29 @@
 	<build>
 		<finalName>myweb</finalName>
 		<plugins>
-		<!-- <plugin>
+		 <plugin>
 			<groupId>org.jacoco</groupId>
-			<artifactId>jacoco-maven-plugin</artifactId>				    
-		</plugin> -->
+			<artifactId>jacoco-maven-plugin</artifactId>
+			 <version>0.5.5.2011121522113</version>
+			 <configuration>
+		<destfile>${basedir}/target/coverage-reports/jacoco-unit.exec</destfile>
+		<datafile>${basedir}/target/coverage-reports/jacoco-unit.exec</datafile>
+		</configuration>
+		<execuions>
+		<execuion>
+		<id>jacoco-initialize</id>
+		<goals>
+		<goal>prepare-agent</goal>
+		</goals>
+		</execuion>
+		<execuion>
+		<id>jacoco-site</id>
+		<phase>package</phase>
+		<goals>
+		<goal>report</goal>
+		</execuion>
+		</execuions>
+		</plugin>
 		</plugins>
 	</build>
 	<profiles>
